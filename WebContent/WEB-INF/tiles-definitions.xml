@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- layout -->
+	<definition name="template-default" template="/WEB-INF/views/layouts/template-default.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="description" value="Controle de nascimento(respawn) dos monstros para jogos mmorpg ou que possuam as mesmas características. Jogadores que querem ser os melhores estão convidados a usar." />
+		<put-attribute name="alerts" value="/WEB-INF/views/sections/alerts.jsp" />
+		<put-attribute name="header" value="/WEB-INF/views/sections/header.jsp" />
+		<put-attribute name="form-conexao" value="/WEB-INF/views/sections/form-conexao.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/sections/sidebar.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/sections/footer.jsp" />
+	</definition>
+	
+	<!-- content sobre -->
+	<definition name="sobre" extends="template-default">
+		<put-attribute name="title" value="Respawn Timer - Sobre" />
+		<put-attribute name="content" value="/WEB-INF/views/contents/sobre.jsp" />
+	</definition>
+	
+	<!-- content respawn -->
+	<definition name="respawn" extends="template-default">
+		<put-attribute name="title" value="Respawn Timer - Controle de Respawns" />
+		<put-attribute name="content" value="/WEB-INF/views/contents/respawn.jsp" />
+	</definition>
+</tiles-definitions>
